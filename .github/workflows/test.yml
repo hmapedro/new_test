@@ -1,0 +1,12 @@
+
+name: Tests
+
+on:
+  fork
+
+jobs:
+  add-to-project:
+    name: Add issue to project
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Repository ${{ github.workspace }}"
